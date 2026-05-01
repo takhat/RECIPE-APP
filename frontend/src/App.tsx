@@ -50,13 +50,13 @@ const App = () => {
   };
 
   const handleViewMoreClick = async () => {
-    const nextPage = pageNumber.current + 1; // Increment the page number
+    const nextPage = pageNumber.current + 1;
     try {
       const nextRecipes = await api.searchRecipes(searchTerm, nextPage, diet);
-      setRecipes([...recipes, ...nextRecipes.results]); // Append new recipes to existing ones
-      pageNumber.current = nextPage; // Update the current page number
-    } catch (err) {
-      console.log("Error fetching more recipes:", err);
+      setRecipes([...recipes, ...nextRecipes.results]);
+      pageNumber.current = nextPage;
+    } catch (error) {
+      console.log(error);
     }
   };
 
