@@ -49,3 +49,5 @@ Takes a search term and calls 3rd party api to return a collection of recipes by
 Takes a recipe id and calls 3rd party api to return recipe summary for that recipe. (displayed as modal)
 3. getFavoriteRecipesByIDs() = `3rdPartybaseUrl/recipes/informationBulk`
 Takes a list of recipe ids and calls 3rd party api to return recipe data for those ids.
+
+Ref : https://www.freecodecamp.org/news/full-stack-project-create-a-recipe-app-using-react-node-js/
